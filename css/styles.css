@@ -1,0 +1,10 @@
+#div-banner{
+    background: rgb(214,128,217);
+    background: linear-gradient(90deg, rgba(214,128,217,1) 30%, rgba(130,73,255,1) 72%);
+}
+
+#banner-title{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: rgb(170,103,172);
+}
