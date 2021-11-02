@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <!--  Online fonts (required for website) -->
@@ -17,9 +18,25 @@
 
 </head>
 <body>
-    <div class="container-fluid p-5" id="div-banner">
-        <h1 id="banner-title" class="text-white text-center">Mind Edition</h1>
-    </div>
+    <!-- start of the header -->
+    <header>
+        <div class="container-fluid py-4 d-flex justify-content-center align-items-center flex-column" id="div-banner">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <img src="resources/mind-logo.png" alt="mind-logo" id="img-banner">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center" id="div-banner-buttons">
+                    <button class="btn btn-primary custom-btn m-2"><i class="bi bi-cloud-arrow-down-fill me-3"></i>Download</button>
+                    <a href="https://t.me/MindEditionSupport" class="btn btn-primary custom-btn m-2"><i class="bi bi-telegram me-3"></i>Support</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end of the header -->
+    <!-- start of the sticky navbar (shows up just when you scroll down) -->
+
 </body>
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/popper.min.js"></script>
