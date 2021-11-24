@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,33 +10,538 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <!--  Online fonts (required for website) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
 </head>
+
 <body>
     <!-- start of the header -->
-    <header>
-        <div class="container-fluid py-4 d-flex justify-content-center align-items-center flex-column" id="div-banner">
-            <div class="row">
+    <header id="start">
+        <div class="py-4 d-flex justify-content-center align-items-center flex-column" id="div-banner">
+            <div class="row animate__animated animate__fadeInDown animate__slow">
                 <div class="col-12 d-flex justify-content-center align-items-center">
                     <img src="resources/mind-logo.png" alt="mind-logo" id="img-banner">
                 </div>
             </div>
-            <div class="row">
+            <div class="row animate__animated animate__fadeInUp animate__slow">
                 <div class="col-12 d-flex justify-content-center align-items-center" id="div-banner-buttons">
-                    <button class="btn btn-primary custom-btn m-2"><i class="bi bi-cloud-arrow-down-fill me-3"></i>Download</button>
-                    <a href="https://t.me/MindEditionSupport" class="btn btn-primary custom-btn m-2"><i class="bi bi-telegram me-3"></i>Support</a>
+                    <a href="#devices" class="btn btn-primary custom-btn m-2"><i
+                            class="bi bi-cloud-arrow-down-fill me-3"></i>Download</a>
+                    <a href="https://t.me/MindEditionSupport" class="btn btn-primary custom-btn m-2"><i
+                            class="bi bi-telegram me-3"></i>Support</a>
                 </div>
             </div>
         </div>
     </header>
     <!-- end of the header -->
     <!-- start of the sticky navbar (shows up just when you scroll down) -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+        <div class="container-fluid text-center align-items-center justify-content-center d-flex flex-column">
+            <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="bi bi-list text-white"></span>
+            </button>
+            <div>
+                <div class="collapse navbar-collapse text-center" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#start"><i class="bi bi-house-fill me-2"></i>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-phone-fill me-2"></i>Devices</a>
+                        </li>            
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end of the sticky navbar -->
+    <!-- start of supported devices -->
+    <br id="devices">
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="section-title">Downloads</h1>
+            </div>
+        </div>
+
+        <!-- lavender -->
+
+        <div class="row my-4">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="d-grid gap-2 w-75">
+                    <button class="btn btn-devices" type="button" data-bs-toggle="collapse" data-bs-target="#lavenderCollapse" aria-expanded="false" aria-controls="lavenderCollapse">
+                        <div class="d-flex">
+                            <div class="w-50 d-flex justify-content-start">
+                                <span class="ms-1 device-name">lavender</span>
+                            </div>
+                            <div class="w-50 d-flex justify-content-end">
+                                <span class="me-1 device-active">active</span>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="collapse mt-3" id="lavenderCollapse">
+                        <div class="d-flex justify-content-center flex-column align-items-center">
+                            <div class="row w-75">
+                                <div class="col-xl-3 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="d-flex flex-column justify-content-center align-items-center background-info">
+                                        <img src="resources/photo_2020-09-30_11-27-23.jpg" class="custom-img mt-1">
+                                        <h1 class="dev-name mt-3">Anderson CV</h1>
+                                    </div>
+                                </div>
+                                <div class="col-xl-9 col-md-12 col-sm-12 col-xs-12 margin-for-boxes">
+                                    <div class="background-info">
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- mido -->
+
+        <div class="row my-4">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="d-grid gap-2 w-75">
+                    <button class="btn btn-devices" type="button" data-bs-toggle="collapse" data-bs-target="#midoCollapse" aria-expanded="false" aria-controls="midoCollapse">
+                        <div class="d-flex">
+                            <div class="w-50 d-flex justify-content-start">
+                                <span class="ms-1 device-name">mido</span>
+                            </div>
+                            <div class="w-50 d-flex justify-content-end">
+                                <span class="me-1 device-active">active</span>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="collapse mt-3" id="midoCollapse">
+                        <div class="d-flex justify-content-center flex-column align-items-center">
+                            <div class="row w-75">
+                                <div class="col-xl-3 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="d-flex flex-column justify-content-center align-items-center background-info">
+                                        <img src="resources/photo_2020-09-30_11-27-23.jpg" class="custom-img mt-1">
+                                        <h1 class="dev-name mt-3">Anderson CV</h1>
+                                    </div>
+                                </div>
+                                <div class="col-xl-9 col-md-12 col-sm-12 col-xs-12 margin-for-boxes">
+                                    <div class="background-info">
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- whyred -->
+
+        <div class="row my-4">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="d-grid gap-2 w-75">
+                    <button class="btn btn-devices" type="button" data-bs-toggle="collapse" data-bs-target="#whyredCollapse" aria-expanded="false" aria-controls="whyredCollapse">
+                        <div class="d-flex">
+                            <div class="w-50 d-flex justify-content-start">
+                                <span class="ms-1 device-name">whyred</span>
+                            </div>
+                            <div class="w-50 d-flex justify-content-end">
+                                <span class="me-1 device-active">active</span>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="collapse mt-3" id="whyredCollapse">
+                        <div class="d-flex justify-content-center flex-column align-items-center">
+                            <div class="row w-75">
+                                <div class="col-xl-3 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="d-flex flex-column justify-content-center align-items-center background-info">
+                                        <img src="resources/photo_2020-09-30_11-27-23.jpg" class="custom-img mt-1">
+                                        <h1 class="dev-name mt-3">Anderson CV</h1>
+                                    </div>
+                                </div>
+                                <div class="col-xl-9 col-md-12 col-sm-12 col-xs-12 margin-for-boxes">
+                                    <div class="background-info">
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- wayne/jasmine -->
+
+        <div class="row my-4">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="d-grid gap-2 w-75">
+                    <button class="btn btn-devices" type="button" data-bs-toggle="collapse" data-bs-target="#wayneCollapse" aria-expanded="false" aria-controls="wayneCollapse">
+                        <div class="d-flex">
+                            <div class="w-50 d-flex justify-content-start">
+                                <span class="ms-1 device-name">wayne/jasmine</span>
+                            </div>
+                            <div class="w-50 d-flex justify-content-end">
+                                <span class="me-1 device-active">active</span>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="collapse mt-3" id="wayneCollapse">
+                        <div class="d-flex justify-content-center flex-column align-items-center">
+                            <div class="row w-75">
+                                <div class="col-xl-3 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="d-flex flex-column justify-content-center align-items-center background-info">
+                                        <img src="resources/photo_2020-09-30_11-27-23.jpg" class="custom-img mt-1">
+                                        <h1 class="dev-name mt-3">Anderson CV</h1>
+                                    </div>
+                                </div>
+                                <div class="col-xl-9 col-md-12 col-sm-12 col-xs-12 margin-for-boxes">
+                                    <div class="background-info">
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- violet -->
+
+        <div class="row my-4">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="d-grid gap-2 w-75">
+                    <button class="btn btn-devices" type="button" data-bs-toggle="collapse" data-bs-target="#violetCollapse" aria-expanded="false" aria-controls="violetCollapse">
+                        <div class="d-flex">
+                            <div class="w-50 d-flex justify-content-start">
+                                <span class="ms-1 device-name">violet</span>
+                            </div>
+                            <div class="w-50 d-flex justify-content-end">
+                                <span class="me-1 device-active">active</span>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="collapse mt-3" id="violetCollapse">
+                        <div class="d-flex justify-content-center flex-column align-items-center">
+                            <div class="row w-75">
+                                <div class="col-xl-3 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="d-flex flex-column justify-content-center align-items-center background-info">
+                                        <img src="resources/photo_2020-09-30_11-27-23.jpg" class="custom-img mt-1">
+                                        <h1 class="dev-name mt-3">Anderson CV</h1>
+                                    </div>
+                                </div>
+                                <div class="col-xl-9 col-md-12 col-sm-12 col-xs-12 margin-for-boxes">
+                                    <div class="background-info">
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- surya/karna -->
+
+        <div class="row my-4">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="d-grid gap-2 w-75">
+                    <button class="btn btn-devices" type="button" data-bs-toggle="collapse" data-bs-target="#suryaCollapse" aria-expanded="false" aria-controls="suryaCollapse">
+                        <div class="d-flex">
+                            <div class="w-50 d-flex justify-content-start">
+                                <span class="ms-1 device-name">surya</span>
+                            </div>
+                            <div class="w-50 d-flex justify-content-end">
+                                <span class="me-1 device-active">active</span>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="collapse mt-3" id="suryaCollapse">
+                        <div class="d-flex justify-content-center flex-column align-items-center">
+                            <div class="row w-75">
+                                <div class="col-xl-3 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="d-flex flex-column justify-content-center align-items-center background-info">
+                                        <img src="resources/photo_2020-09-30_11-27-23.jpg" class="custom-img mt-1">
+                                        <h1 class="dev-name mt-3">Anderson CV</h1>
+                                    </div>
+                                </div>
+                                <div class="col-xl-9 col-md-12 col-sm-12 col-xs-12 margin-for-boxes">
+                                    <div class="background-info">
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- tulip -->
+
+         <div class="row my-4">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="d-grid gap-2 w-75">
+                    <button class="btn btn-devices" type="button" data-bs-toggle="collapse" data-bs-target="#tulipCollapse" aria-expanded="false" aria-controls="tulipCollapse">
+                        <div class="d-flex">
+                            <div class="w-50 d-flex justify-content-start">
+                                <span class="ms-1 device-name">tulip</span>
+                            </div>
+                            <div class="w-50 d-flex justify-content-end">
+                                <span class="me-1 device-active">active</span>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="collapse mt-3" id="tulipCollapse">
+                        <div class="d-flex justify-content-center flex-column align-items-center">
+                            <div class="row w-75">
+                                <div class="col-xl-3 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="d-flex flex-column justify-content-center align-items-center background-info">
+                                        <img src="resources/photo_2020-09-30_11-27-23.jpg" class="custom-img mt-1">
+                                        <h1 class="dev-name mt-3">Anderson CV</h1>
+                                    </div>
+                                </div>
+                                <div class="col-xl-9 col-md-12 col-sm-12 col-xs-12 margin-for-boxes">
+                                    <div class="background-info">
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ulysse -->
+
+        <div class="row my-4">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="d-grid gap-2 w-75">
+                    <button class="btn btn-devices" type="button" data-bs-toggle="collapse" data-bs-target="#ulysseCollapse" aria-expanded="false" aria-controls="ulysseCollapse">
+                        <div class="d-flex">
+                            <div class="w-50 d-flex justify-content-start">
+                                <span class="ms-1 device-name">ulysse</span>
+                            </div>
+                            <div class="w-50 d-flex justify-content-end">
+                                <span class="me-1 device-active">active</span>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="collapse mt-3" id="ulysseCollapse">
+                        <div class="d-flex justify-content-center flex-column align-items-center">
+                            <div class="row w-75">
+                                <div class="col-xl-3 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="d-flex flex-column justify-content-center align-items-center background-info">
+                                        <img src="resources/photo_2020-09-30_11-27-23.jpg" class="custom-img mt-1">
+                                        <h1 class="dev-name mt-3">Anderson CV</h1>
+                                    </div>
+                                </div>
+                                <div class="col-xl-9 col-md-12 col-sm-12 col-xs-12 margin-for-boxes">
+                                    <div class="background-info">
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                        <div class="px-5 my-3">
+                                            <div class="d-flex justify-content-between f-column-1200">
+                                                <a href="" class="download-link my-1"><i class="bi bi-cloud-arrow-down-fill me-2 hide-icon"></i>Download</a>
+                                                <a href="" class="changelog-link my-1"><i class="bi bi-journal-text me-2 hide-icon"></i>Changelog</a>
+                                                <label class="justify-content-end date-link my-1"><i class="bi bi-calendar-check-fill me-2 hide-icon"></i>05/11/2021</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid py-5">
+            <div class="row">
+                <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12 px-5 py-3 d-flex justify-content-xl-end justify-content-md-end justify-content-sm-center justify-content-xs-center justify-content-center">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="resources/photo_2021-11-04_11-37-28.jpg" class="img-fluid rounded-circle" width="70px">
+                        <h1 class="dev-name mt-3">Eduardo Rivera</h1>
+                        <div class="d-flex">
+                            <a href="" id="link-github"><i class="bi bi-github mx-2"></i></a>
+                            <a href="" id="link-telegram"><i class="bi bi-telegram mx-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-xl-start justify-content-md-start justify-content-sm-center justify-content-xs-center justify-content-center align-items-center" id="separator-footer">
+                    <div class="w-50 ms-xl-4 ms-md-4 ms-sm-0 ms-xs-0 text-xl-start text-md-start text-sm-center text-xs-center">
+                        <label class="dev-name">Designed and created by Eduardo Rivera, MIUI Mind Edition</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 <script src="js/jquery-3.6.0.min.js"></script>

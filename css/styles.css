@@ -2,6 +2,15 @@
 
 body {
     background-color: black;
+    overflow-x: hidden !important;
+}
+
+#navbar{
+    background-color: black;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
 }
 
 #div-banner {
@@ -12,6 +21,7 @@ body {
     position: relative;
     animation: change 10s ease-in-out infinite;
 }
+
 
 @keyframes change {
     0%{
@@ -31,6 +41,22 @@ body {
     height: 350px;
     padding-left: 10px;
     opacity: 20%;
+}
+
+.section-title{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: white;
+    text-align: center;   
+}
+
+.dev-name{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    align-items: center;
 }
 
 .custom-btn{
@@ -53,11 +79,135 @@ body {
     background-color: rgba(0,0,0,50%);
 }
 
+.background-info{
+    border-radius: 20px;
+    background-color: rgb(12, 12, 12);
+    padding: 20px;
+}
+
+.btn-devices{
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(12, 12, 12);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.btn-devices:hover{
+    color: white;
+    background-color: rgb(20, 20, 20);
+}
+
+.device-active{
+    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: green;
+    letter-spacing: 2px;
+    border-radius: 20px;
+}
+
+.device-dropped{
+    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: rgb(221, 4, 4);
+    letter-spacing: 2px;
+    border-radius: 20px;
+}
+
+.device-name{
+    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: transparent;
+    letter-spacing: 2px;
+    border-radius: 20px;
+}
+
 .btn-primary:focus,
 .btn-primary:active {
     box-shadow: none !important;
     outline: 0px !important;
 }
+
+.nav-link{
+    color: white ;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s;
+}
+
+.nav-link:hover{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.custom-img{
+    width: 95px;
+    height: 95px;
+    border-radius: 50px;
+    object-fit: cover !important;
+    margin: 10px;
+}
+
+.download-link{
+    color:#BFA2DB;
+    text-decoration: unset;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.download-link:hover{
+    color: #a893bb;
+}
+
+.changelog-link{
+    color:#F0D9FF;
+    text-decoration: unset;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.changelog-link:hover{
+    color: #c1b2cc;
+}
+
+.date-link{
+    color:#F5E5FF;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 14px; 
+}
+
+.custom-textarea{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    background-color: black;
+    border-color: black;
+    border-radius: 15px;
+}
+
+.custom-textarea:focus{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    background-color: black;
+    border-color: black;
+    border-radius: 15px;
+}
+
 
 @media (max-width:768px){
     #div-banner-buttons{
@@ -70,4 +220,108 @@ body {
         padding-left: 10px;
         opacity: 20%;
     }
+
+    .nav-link:hover{
+        color: white;
+        border-bottom: 1px solid transparent;
+    }
+
+    .f-column-1200{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #separator-footer{
+        border-left: 0px solid transparent !important;
+    }
 }
+
+@media (max-width:1199px){
+    .margin-for-boxes{
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:479px){
+    .hide-icon{
+        display: none !important;
+    }
+}
+
+@media(max-width:383px){
+    .device-name{
+        padding-top: 5px;
+        padding-bottom: 7px;
+        padding-right: 15px;
+        padding-left: 15px;
+        background-color: transparent;
+        letter-spacing: 0px;
+        border-radius: 20px;
+    }
+
+    .device-active{
+        padding-top: 5px;
+        padding-bottom: 7px;
+        padding-right: 15px;
+        padding-left: 15px;
+        background-color: green;
+        letter-spacing: 0px;
+        border-radius: 20px;
+    }
+    
+    .device-dropped{
+        padding-top: 5px;
+        padding-bottom: 7px;
+        padding-right: 15px;
+        padding-left: 15px;
+        background-color: rgb(221, 4, 4);
+        letter-spacing: 0px;
+        border-radius: 20px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    border: 1px solid linear-gradient(45deg, #E78DB6, #C782E6, #a582e6, #E78DB6) !important;
+    animation: change 10s ease-in-out infinite;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background: black !important;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 24px;
+    background: linear-gradient(45deg, #E78DB6, #C782E6, #a582e6, #E78DB6) !important;
+    animation: change 10s ease-in-out infinite;
+  }
+
+  footer{
+      background-color: rgb(15, 15, 15);
+  }
+
+  #separator-footer{
+      border-left: 1px solid white;
+  }
+
+  #link-github{
+    font-size: 24px;
+    color: white;
+  }
+  
+  #link-github:hover{
+    font-size: 24px;
+    color: rgb(219, 219, 219);
+  }
+
+  #link-telegram{
+    font-size: 24px;
+    color: #188ECA;
+  }
+
+  #link-telegram:hover{
+    font-size: 24px;
+    color: #1b7aaa;
+  }
